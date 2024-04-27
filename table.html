@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5501/table.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+	<style>
+	th,td{ border:1px solid red}
+	table{ border-collapse: collapse;}
+	thead{background-color: beige; height: 50px;}
+	tfoot{background-color: beige;height: 50;}
+
+	</style>
+    
+</head>
+<body>
+    <table>
+       <caption>table</caption>
+       <tbody><tr>
+        <td>name</td>
+        <th rowspan="3">ruselt </th>
+        <td>round</td>
+        <td>marks</td>
+        </tr><tr>
+            <td>masud darder</td>
+            <td>wdpf-60</td>
+            <td>80</td>
+            </tr><tr>
+                <td>saif jahan</td>
+                <td>wdpf-60</td>
+                <td>90</td>
+            </tr>
+        
+       
+        
+    </tbody></table>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<hr>
+<h6>book list</h6>
+
+<table>
+	<caption> booklist with price</caption>
+	<colgroup>
+	<col style="background-color: beige;">
+	<col style="background-color: beige;">
+	<col style="background-color: aquamarine;">
+
+	
+	</colgroup>
+	<tr>
+		<th>sn</th>
+		<th>book name</th>
+		<th>price</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>html advance</td>
+		<td>$30</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>javascript</td>
+		<td></td>
+	</tr>
+</table>
+<hr>
+<h3>table 7</h3>
+<table style="width: 400px; height: 400;">
+	<tr>
+		<thead>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		</thead>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<tfoot>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tfoot>
+	</tr>
+</table>
+</body></html>

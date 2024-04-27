@@ -1,0 +1,22 @@
+body{
+    background-color: rgba(140, 82, 75, .5);
+}
+.box1{
+    background-color: #410606;
+    height:  200px;
+    width:  200px;
+    float:  left;
+}
+.box2{
+    background-color: rgb(148, 69, 69);
+    height:  200px;
+    width:  200px;
+    float:  left;
+}
+.box3{
+    background-color: #f81d1d;
+    height:  200px;
+    width:  200px;
+    float:  left;
+
+}
